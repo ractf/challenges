@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:b&display=swap');
+
+.attention-grabber {
+    position: absolute;
+    top: 35%;
+    left: 10px;
+    right: 10px;
+}
+
+.sign-in-window {
+    position: absolute;
+    top: 35%;
+    left:50%;
+    transform: translateX(-50%) translateY(-35%);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.sign-in-top {
+    background-color: #D1345B;
+    border-radius: 7px 7px 0 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.login-btn {
+    background-color: #34D1BF;
+    border-radius: 0 0 7px 7px;
+    width: 100%;
+    padding: 12px;
+    border: 0;
+    color: #EFEFEF;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.field {
+    border: 2px solid #34D1BF;
+    border-radius: 4px;
+    padding: 7px 7px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #EFEFEF;
+}
+
+.button {
+    padding: 20px;
+    font-family: 'Rubik', sans-serif;
+    border-radius: 7px;
+    border: none;
+    color: #EFEFEF;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.sign-in {
+    background-color: #44E1CF;
+    font-size: 22px;
+}
+
+.sign-up {
+   background-color: #34D1BF;
+}
+
+.title {
+    font-size: 35px;
+}
+
+.subtitle {
+    font-size: 15px;
+}

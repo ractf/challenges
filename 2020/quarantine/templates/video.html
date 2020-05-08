@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="videos">
+    <center>
+        <h1>Watch video</h1>
+        {% if error %}{{ error }}{% endif %}
+        <div class="video">
+            <video controls src="data:video/mp4;base64,{{ vdata }}"></video>
+        </div>
+    </center>
+</div>
+{% endblock %}
