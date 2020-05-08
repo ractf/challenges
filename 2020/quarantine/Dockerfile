@@ -5,4 +5,6 @@ ADD . /srv/quarantine/
 
 RUN python3 -m pip install -r /srv/quarantine/requirements.txt
 
+EXPOSE 5000
+
 CMD ["python3", "/srv/quarantine/app.py"]
