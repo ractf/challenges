@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<!-- THIS PAGE IS NOT PART OF THE CTF -->
+<!-- Don't try and break into this page unless a
+     challenge has explicitly told you to do so! -->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{%block title %}{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static', filename='site.css') }}">
+    </head>
+    <body>
+        <h1>{{ self.title() }}</h1>
+        {% block body %}{% endblock %}
+        <hr>
+        <p>Please don't try and break this website itself, that's not part of the challenge.</p>
+    </body>
+</html>
