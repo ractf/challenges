@@ -1,0 +1,6 @@
+{
+  "name": "raro",
+  "port": 6969,
+  "mem_limit": 768,
+  "user_limit": 35
+}
