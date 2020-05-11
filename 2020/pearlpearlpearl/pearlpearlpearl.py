@@ -1,3 +1,4 @@
+#!/usr/local/bin/python
 # definitely not inspired by clamclamclam
 import socket
 

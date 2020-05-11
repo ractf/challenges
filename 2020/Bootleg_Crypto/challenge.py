@@ -1,3 +1,4 @@
+#!/usr/local/bin/python
 import random
 
 def split_num(categories, num):

@@ -1,7 +1,7 @@
 FROM python:3.8-alpine
 
 RUN mkdir /srv/challenge
-ADD . /srv/challenge/
+ADD teleport.py /srv/challenge/teleport.py
 
 RUN apk add socat
 

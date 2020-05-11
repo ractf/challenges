@@ -1,3 +1,4 @@
+#!/usr/local/bin/python
 import math
 
 x = 0.0

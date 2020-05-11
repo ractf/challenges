@@ -1,3 +1,4 @@
+#!/usr/local/bin/python
 import base64
 
 def encrypt(plaintext, key):

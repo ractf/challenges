@@ -1,3 +1,4 @@
+#!/usr/local/bin/python
 def put_on_stack(string):
     """
     Generate the bytecode required to put a single string
