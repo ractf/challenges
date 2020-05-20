@@ -4,6 +4,8 @@ RUN mkdir /srv/challenge
 
 ADD . /srv/challenge/
 
+WORKDIR /srv/challenge/
+
 RUN npm i
 
 RUN chmod -R 755 /srv/challenge
