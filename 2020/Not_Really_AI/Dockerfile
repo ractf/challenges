@@ -11,7 +11,7 @@ RUN touch /srv/challenge/flag.txt
 RUN echo "ractf{f0rmat_Str1nG_fuN}" > /srv/challenge/flag.txt
 
 RUN chmod -R 755 /srv/challenge
-RUN adduser -Ss /bin/bash ractf
+RUN adduser --system --shell /bin/bash ractf
 
 USER ractf
 
