@@ -11,7 +11,7 @@ RUN touch /srv/challenge/flag.txt
 RUN echo "ractf{St4ck_C4n4ry_FuN!}" > /srv/challenge/flag.txt
 
 RUN chmod -R 755 /srv/challenge
-RUN adduser -Ss /bin/bash ractf
+RUN adduser --system --shell /bin/bash ractf
 USER ractf
 
 CMD ["socat", "tcp-l:5000,reuseaddr,fork", "exec:/srv/challenge/canary"]
