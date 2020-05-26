@@ -10,11 +10,11 @@ send = ""
 for e in endings:
     send += "ctf{pearlpearlpearl}" + e
 
-while True:
-    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-        s.bind(('0.0.0.0', 5000))
-        s.listen()
-        conn, addr = s.accept()
-        with conn:
-            conn.send(bytes(send, "utf-8"))
-            conn.close()
+with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+	s.bind(('0.0.0.0', 5000))
+	while True:
+		s.listen()
+		conn, addr = s.accept()
+		with conn:
+			conn.send(bytes(send, "utf-8"))
+			conn.close()
