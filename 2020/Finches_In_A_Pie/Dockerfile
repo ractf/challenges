@@ -16,4 +16,4 @@ RUN adduser --system --shell /bin/bash ractf
 USER ractf
 
 
-CMD ["socat", "tcp-l:5000,reuseaddr,fork", "exec:/srv/challenge/stolen_pie"]
+CMD ["socat", "-f", "tcp-l:5000,reuseaddr,fork", "exec:/srv/challenge/stolen_pie,stderr"]
