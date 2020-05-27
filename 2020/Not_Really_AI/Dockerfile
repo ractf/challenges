@@ -15,4 +15,4 @@ RUN adduser --system --shell /bin/bash ractf
 
 USER ractf
 
-CMD ["socat", "-f", "tcp-l:5000,reuseaddr,fork", "exec:/srv/challenge/format,stderr"]
+CMD ["socat", "-s", "tcp-l:5000,reuseaddr,fork", "exec:/srv/challenge/format,stderr"]
