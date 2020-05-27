@@ -8,5 +8,6 @@ RUN apm install socat
 RUN chmod -R 755 /srv/challenge
 RUN useradd -ms /bin/bash ractf
 USER ractf
+WORKDIR /srv/challenge
 
 CMD ["socat", "-s", "tcp-l:5000,reuseaddr,fork", "exec:/srv/challenge/challenge.py,stderr"]
