@@ -2,5 +2,5 @@
   "name": "quarantine",
   "port": 5000,
   "mem_limit": 512,
-  "user_limit": 25
+  "user_limit": 100
 }
