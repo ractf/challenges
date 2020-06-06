@@ -11,6 +11,8 @@ jobs:
     strategy:
       matrix:
         challenge: ["bootleg_crypto", "bootleg_crypto_again", "finches_in_a_pie", "finches_in_a_stack", "not_really_ai", "puffer_overflow", "really_simple_algorithm", "really_small_algorithm", "really_speedy_algorithm", "teleport", "access_0000", "collide", "emojasm_1", "emojasm_2", "pearlpearlpearl", "pybo", "quarantine", "raro"]
+
+      fail-fast: false
     
     steps:
     - name: Checkout repository
