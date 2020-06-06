@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        challenge: ["Bootleg_Crypto", "Bootleg_Crypto_Again", "Finches_In_A_Pie", "Finches_In_A_Stack", "Not_Really_AI", "Puffer_Overflow", "Really_Simple_Algorithm", "Really_Small_Algorithm", "Really_Speedy_Algorithm", "Teleport", "access_0000", "collide", "emojasm_1", "emojasm_2", "pearlpearlpearl", "pybo", "quarantine", "raro"]
+        challenge: ["bootleg_crypto", "bootleg_crypto_again", "finches_in_a_pie", "finches_in_a_stack", "not_really_ai", "puffer_overflow", "really_simple_algorithm", "really_small_algorithm", "really_speedy_algorithm", "teleport", "access_0000", "collide", "emojasm_1", "emojasm_2", "pearlpearlpearl", "pybo", "quarantine", "raro"]
     
     steps:
     - name: Checkout repository
