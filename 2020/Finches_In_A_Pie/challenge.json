@@ -1,6 +1,0 @@
-{
-  "name": "Finches_In_A_Pie",
-  "port": 5000,
-  "mem_limit": 512,
-  "user_limit": 45
-}

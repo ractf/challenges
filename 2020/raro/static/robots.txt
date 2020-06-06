@@ -1,5 +1,0 @@
-User-Agent: *
-Disallow: /admin
-Disallow: /wp-admin
-Disallow: /admin.php
-Disallow: /static
