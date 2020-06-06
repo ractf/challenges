@@ -17,4 +17,4 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Build challenge
-      script: cd 2020/${{ matrix.challenge }} && docker build -t docker.pkg.github.com/ractf/challenges/$${{ matrix.challenge }}:latest . && docker push docker.pkg.github.com/ractf/challenges/$${{ matrix.challenge }}:latest
+      run: cd 2020/${{ matrix.challenge }} && docker build -t docker.pkg.github.com/ractf/challenges/$${{ matrix.challenge }}:latest . && docker push docker.pkg.github.com/ractf/challenges/$${{ matrix.challenge }}:latest
