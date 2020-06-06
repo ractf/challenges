@@ -1,0 +1,6 @@
+{
+  "name": "collide",
+  "port": 3000,
+  "mem_limit": 1024,
+  "user_limit": 80
+}

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}EmojASM&trade; Runner{% endblock %}
+{% block body %}
+<p>
+    <ul>
+        <li>Each tape has been preloaded with some data.</li>
+        <li>For each position n, the byte on T0 at position n should be xored with the byte on T1[n] to produce the flag.</li>
+        <li>The flag data starts at the beginning of the tapes.</li>
+    </ul>
+</p>
+<form action="{{url_for('runpage')}}" method="POST" accept-charset="UTF-8">
+    <label for=src>Enter your program here.</label><br>
+    <textarea rows=10 cols=100 id=src name=src></textarea><br>
+    <input type="submit" value="Run">
+</form>
+<p>
+    Notes:
+    <ul>
+        <li>Input is disabled: the input instruction will always return 0.</li>
+        <li>The maximum number of instructions that can be executed has been limited to 50000. This is more than enough for this challenge. (Therefore, infinite loops won't work :p)</li>
+    </ul>
+</p>
+{% endblock %}

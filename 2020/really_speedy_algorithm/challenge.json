@@ -1,0 +1,6 @@
+{
+  "name": "really_speedy_algorithm",
+  "port": 31337,
+  "mem_limit": 512,
+  "user_limit": 100
+}

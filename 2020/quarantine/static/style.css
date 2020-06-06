@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:b&display=swap');
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #3454D1;
+}
+
+.menu {
+    position: absolute;
+    top: 0px;
+    background-color: #070707;
+    color: #EFEFEF;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 25px;
+    width:100vw;
+    left: 0px;
+    box-sizing: border-box;
+    right: 10px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0px;
+    background-color: #070707;
+    color: #EFEFEF;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 25px;
+    width:100vw;
+    left: 0px;
+    box-sizing: border-box;
+    right: 10px;
+    white-space: nowrap;
+}
+
+.menu-item {
+    text-decoration: none;
+    color: #EFEFEF;
+}
+
+.footer-item {
+    text-decoration: underline;
+    color: #EFEFEF;
+    font-size: 14px;
+    float: left;
+    padding-right: 17px;
+}
+
+.footer-right {
+    float: right;
+    padding-right: 25px;
+}
+
+.menu-home {
+    font-size: 17px;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #EFEFEF;
+}
+
+.error {
+    font-size: 75%;
+}
+
+a:hover {
+    color: #D1345B;
+}
+
+a::selection {
+    color: #EFEFEF;
+}
+
+.videos {
+    left: 10px;
+    right: 10px;
+    top: 15%;
+    position: absolute;
+    text-align: center;
+}
+
+a {
+    color: #EFEFEF;
+}
