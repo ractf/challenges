@@ -19,7 +19,7 @@ FLAG = 'ractf{F45t35tCryp70gr4ph3rAr0und}'
 
 
 def client_thread(conn, addr, timeout=20):
-    conn.setblocking(0)
+    conn.settimeout(2)
     start = time.time()
 
     conn.send(b'''[*] Welcome to my little RSA game.
@@ -53,10 +53,10 @@ def client_thread(conn, addr, timeout=20):
 
         try:
             buffer += conn.recv(4096)
-        except BlockingIOError:
-            if time.time() - start > timeout:
-                conn.close()
-                return
+        except socket.timeout:
+            conn.send(f'\n[!] A good cryptologist should be faster than that!\n\n'.encode())
+            conn.close()
+            return
 
         if b'\n' not in buffer:
             continue
