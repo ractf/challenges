@@ -41,7 +41,7 @@ def runpage():
             s.close()
         except Exception as e:
             output = str(e)
-        if output==FLAG:
+        if "ractf{" in output:
             return render_template("output.html", output=output)
         else:
             return render_template("output.html", output="Output did not match flag. To see full output, use practice mode at /practice. (Your output needs to be the flag and ONLY the flag! Trailing characters will invalidate it. Use :moyai: to halt your program when you're done reading the flag.")
