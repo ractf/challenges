@@ -1,0 +1,10 @@
+Dev Note to Admin
+-----------------
+
+I've fixed the security issues now! No one will be able to steal your creds again! I've even made sure they can't load this file from the WSGI server.
+
+name: admin
+pass_p1: $argon2id$v=19$m=102400,t=2,p=8$WmI1xK/4Z1fiLj20O2fDpA$7Oy7WAp9gERzT/T5RlDXCw
+pass_p2: $argon2id$v=19$m=102400,t=2,p=8$vZaZ9D3ERgo/DOnoNvQkEA$IOxfMIF7cgKbnHalTLU9uA
+
+Hahaha yes ultra secure solution go brrrrrrrrr!

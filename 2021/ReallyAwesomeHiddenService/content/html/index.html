@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Really Terrible Plaintext Service</title>
+</head>
+<body>
+    <style>
+        .bounce{
+  animation:bounce 5s linear 100;
+  width: 50%;
+  }
+
+  .boris  {
+      display: none;
+  }
+
+  .a {
+      color: white;
+  }
+
+  .rainbowText {
+  font-family:arial black;
+  font-size:70px;
+  background-image: 
+    linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
+  animation: move 35s linear infinite;
+}
+
+@keyframes move {
+  to {
+    background-position: 4500vh;
+  }
+}
+
+ @keyframes bounce{
+    0%{
+      transform:translate(0px,0px);
+      }
+    25%{
+       transform:translate(100px,100px);
+      
+      }
+    50%{
+       transform:translate(200px,0px); 
+      }
+     75%{
+       transform:translate(100px,-100px);
+        
+
+       }
+   100%{
+      transform:translate(0px,0px);
+      
+      }   
+   }
+
+        html {
+            background-color: black;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+
+    </style>
+    <h1 class="a">Really Terrible Plaintext Service</h1>
+    <marquee behavior="alternate"><img src="https://i.gifer.com/origin/2e/2ec8bf2dd59decfc3e3911c478a1e960_w200.gif"></marquee>
+    <div class="boris" id="s">
+        <center><video src="https://cdn.discordapp.com/attachments/755162213211177004/867160059313782824/boris.webm" id="blyat" loop></video></center>
+    </div>
+    <center><h2 class="bounce rainbowText">ractf{DreadingPirates}</h2></center>
+
+    <script>
+        function boris() {
+            document.getElementById("s").classList.remove("boris")
+            document.getElementById("blyat").play();
+        }
+    </script>
+
+    <center>
+        <button onclick="boris()">click for flag</button>
+    </center>
+</body>
+</html>
+
